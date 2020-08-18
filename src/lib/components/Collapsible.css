@@ -1,0 +1,63 @@
+.collapsible_section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* the collapsible node */
+.collapsible {
+  max-height: 20px;
+  background-color: #CED2CC;
+  color: #334553;
+  cursor: pointer;
+  padding-right: 18px;
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.4s ease;
+}
+
+/* the collapsible node when activated or hover */
+.collapsible:hover,
+.active {
+  background-color: #7E909A;
+  color: #F1F1F1;
+}
+
+/* Chevron Icon */
+.collapsible_icon {
+  text-align: left;
+  margin-right: 10px;
+  transition: transform 0.1s ease;
+}
+
+/* Title from the collapsible node */
+.collapsible_title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* Chevron rotation */
+.rotate {
+  transform: rotate(90deg);
+}
+
+/* Node content */
+.collapsible_content {
+  background-color: white;
+  overflow: hidden;
+  max-height: 100px;
+}
+/* Node content text */
+.collapsible_text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  padding-left: 18px;
+  padding-top: 2px;
+  padding-bottom: 6px;
+}
